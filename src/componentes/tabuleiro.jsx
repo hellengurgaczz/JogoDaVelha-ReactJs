@@ -7,19 +7,38 @@ var array = []
 
 const tabuleiro = _ => {
 
-    const guardarLocalStorage = () =>{
-        
+    const guardarLocalStorage = (id) => {
+
+        if(localStorage.length > 10 ){
+            localStorage.clear()
+        }
+
+        let linha = null
+        let coluna = null
+
+        if (id === 1) { linha = 1; coluna = 1 }
+        if (id === 2) { linha = 1; coluna = 2 }
+        if (id === 3) { linha = 1; coluna = 3 }
+        if (id === 4) { linha = 2; coluna = 1 }
+        if (id === 5) { linha = 2; coluna = 2 }
+        if (id === 6) { linha = 2; coluna = 3 }
+        if (id === 7) { linha = 3; coluna = 1 }
+        if (id === 8) { linha = 3; coluna = 2 }
+        if (id === 9) { linha = 3; coluna = 3 }
+
+        let objeto = { Jogada: i, Linha: linha, Coluna: coluna }
+        localStorage.setItem(i, JSON.stringify(objeto))
     }
 
     const marcar = (id) => {
         if (document.getElementById(id).innerHTML || _.ganhador != null) {
 
         } else {
-            array[id-1] = _.icone
+            array[id - 1] = _.icone
             document.getElementById(id).innerHTML = _.icone
             document.getElementById(id).className = _.icone === 'X' ? 'jogadorX' : 'jogadorO'
             _.icone === 'X' ? _.mudarIcone('O') : _.mudarIcone('X')
-            guardarLocalStorage()
+            guardarLocalStorage(id)
             i++
         }
     }

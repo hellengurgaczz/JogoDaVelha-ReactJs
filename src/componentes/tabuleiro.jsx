@@ -29,18 +29,6 @@ const tabuleiro = _ => {
         let objeto = { jogada: i, linha: linha, coluna: coluna }
         localStorage.setItem(i, JSON.stringify(objeto))
 
-        let arrayKeys = []
-
-        for (let i = 0; i < localStorage.length; i++) {
-            arrayKeys.push((+localStorage.key(i)))
-        }
-
-        arrayKeys.sort().map(e => {
-            let objeto = JSON.parse(localStorage.getItem(e))
-            console.log('Jogada: ', objeto.jogada, ' | Linha: ', objeto.linha, ' | Coluna: ', objeto.coluna)
-            return null
-        })
-
     }
 
     const marcar = (id) => {
@@ -90,7 +78,7 @@ const tabuleiro = _ => {
             _.declararGanhador(array[0])
         }
 
-        else if (i === 9) {
+        else if (i === 10) {
             _.declararGanhador('#')
         }
     }

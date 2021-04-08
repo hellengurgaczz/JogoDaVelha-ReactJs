@@ -9,7 +9,7 @@ const tabuleiro = _ => {
 
     const guardarLocalStorage = (id) => {
 
-        if(localStorage.length > 10 ){
+        if(i === 1){
             localStorage.clear()
         }
 

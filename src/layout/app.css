@@ -1,0 +1,32 @@
+body{
+    color: black;
+    font-family: fonteQuadrinho;
+    text-shadow: -3.5px -2px #6fcb9f;  
+}
+
+div {
+    text-align: center;
+}
+
+button{
+    font-family: Stabillo;
+    font-size: 30px;
+    color: black;
+}
+
+button:active{
+    outline: none;
+}
+
+
+@font-face {
+    font-family: FonteQuadrinho;
+    src: url('../fontes/fonteQuadrinho.otf');
+}
+
+
+@font-face {
+    font-family: Stabillo;
+    src: url('../fontes/stabillo.otf');
+}
+

@@ -1,0 +1,63 @@
+#jogo{
+    display: flex;
+    padding-top: 10%;
+}
+
+#jogo #esquerdo{
+    flex: 50%;
+}
+
+#jogo #direito{
+    flex: 50%;
+}
+
+#jogo h2{
+    font-size: 80px;
+}
+
+#jogo h3{
+    font-family: Basketball;
+    color: black;
+    text-shadow: none;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #6fcb9f;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+#jogo #esquerdo button{
+    width: 320px;
+    height: 50px;
+    background-color: #6fcb9f;
+    border-radius: 5px;
+    border: solid #6fcb9f;
+    font-weight: bold;
+}
+
+#jogo #esquerdo button:hover{
+    filter: brightness(0.9);
+    width: 330px;
+    height: 60px;
+}
+
+#jogo .X{
+    font-size: 35px;
+    text-shadow: -3.5px -2px #fb2e01;
+}
+
+#jogo .O{
+    font-size: 35px;
+    text-shadow: -3.5px -2px #ffe700;
+}
+
+#jogo .velha{
+    font-size: 35px;
+    text-shadow: -3.5px -2px #836FFF;
+}
+
+@font-face {
+    font-family: Basketball;
+    src: url('../fontes/Basketball.otf');
+}

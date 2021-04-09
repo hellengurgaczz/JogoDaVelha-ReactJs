@@ -34,8 +34,8 @@ const jogo = _ => {
             <div id="desafios">
                 <div id="opcoes">
                     <h3>Lista de Jogadas:</h3>
-                    <button onClick={e => setSolicitarRetorno(0)}>Ordem crescente</button>
-                    <button onClick={e => setSolicitarRetorno(1)}>Ordem descrescente</button>
+                    <button onClick={e => setSolicitarRetorno(1)}>Ordem crescente</button>
+                    <button onClick={e => setSolicitarRetorno(2)}>Ordem descrescente</button>
                 </div>
                 <div id="retornos">
                     {solicitarRetorno ? <Retorno solicitarRetorno={solicitarRetorno} /> : null}

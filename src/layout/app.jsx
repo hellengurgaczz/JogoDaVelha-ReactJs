@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
 import "./app.css"
-import InicialTela from '../componentes/inicialTela'
-import Jogo from '../componentes/jogo'
+import InicialTela from '../componentes/JSX/inicialTela'
+import Jogo from '../componentes/JSX/jogo'
 
 
 const app = _ => {

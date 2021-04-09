@@ -1,5 +1,5 @@
 import React from 'react';
-import './inicialTela.css';
+import '../CSS/inicialTela.css';
 
 const inicialTela = _ => {
 

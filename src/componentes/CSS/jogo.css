@@ -33,10 +33,6 @@
     height: 50px;
 }
 
-#opcoes button:active{
-        
-}
-
 #retornos{
     flex: 75%;
     color: white;
@@ -97,14 +93,9 @@
     height: 60px;
 }
 
-#jogo .X{
+.ganhador{
     font-size: 35px;
     text-shadow: -3.5px -2px #fb2e01;
-}
-
-#jogo .O{
-    font-size: 35px;
-    text-shadow: -3.5px -2px #ffe700;
 }
 
 #jogo .velha{
@@ -112,7 +103,3 @@
     text-shadow: -3.5px -2px #836FFF;
 }
 
-@font-face {
-    font-family: Basketball;
-    src: url('../fontes/Basketball.otf');
-}

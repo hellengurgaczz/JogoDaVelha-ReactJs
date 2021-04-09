@@ -9,8 +9,8 @@ div {
 }
 
 button{
-    font-family: Stabillo;
-    font-size: 30px;
+    font-family: Basketball;
+    font-size: 25px;
     color: black;
 }
 
@@ -18,15 +18,15 @@ button:active{
     outline: none;
 }
 
-
 @font-face {
     font-family: FonteQuadrinho;
     src: url('../fontes/fonteQuadrinho.otf');
 }
 
-
 @font-face {
-    font-family: Stabillo;
-    src: url('../fontes/stabillo.otf');
+    font-family: Basketball;
+    src: url('../fontes/Basketball.otf');
 }
+
+
 

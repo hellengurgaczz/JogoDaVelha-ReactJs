@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
-import "./tabuleiro.css"
-import RedenizarTabuleiro from './redenizarTabuleiro'
+import "../CSS/tabuleiro.css"
+
 
 var i = 1
 var array = Array(9).fill(0)

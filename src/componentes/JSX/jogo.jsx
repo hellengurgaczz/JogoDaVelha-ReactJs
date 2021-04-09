@@ -2,7 +2,7 @@
 import React from 'react'
 import Tabuleiro from './tabuleiro'
 import Retorno from './retorno'
-import "./jogo.css"
+import "../CSS/jogo.css"
 
 
 const jogo = _ => {
@@ -24,7 +24,7 @@ const jogo = _ => {
                 <div id="menu">
                     <h2>Jogo</h2>
                     <h3>Jogador: {jogadorIcone}</h3>
-                    {ganhador === 'X' || ganhador === 'O' ? <p className={ganhador}>O jogador {ganhador} vanceu! Parabens!</p> : null}
+                    {ganhador === 'X' || ganhador === 'O' ? <p className={'ganhador'}>O jogador {ganhador} vanceu! Parabens!</p> : null}
                     {ganhador === '#' ? <p className={'velha'}>DEU VELHA! &#129325; </p> : null}
                     <button onClick={e => window.location.reload()}>REINICIAR JOGO</button>
                 </div>

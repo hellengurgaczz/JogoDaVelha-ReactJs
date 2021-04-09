@@ -15,7 +15,7 @@ const jogo = _ => {
 
     const declararGanhador = ganhadorIcone => setGanhador(ganhadorIcone)
 
-    const [solicitarRetorno, setSolicitarRetorno] = React.useState(null)
+    const [solicitarRetorno, setSolicitarRetorno] = React.useState(1)
 
     return (
         <div id="telaTotalJogo">

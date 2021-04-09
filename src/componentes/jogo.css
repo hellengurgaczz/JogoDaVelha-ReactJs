@@ -1,33 +1,25 @@
-#telaTotalJogo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 #jogo{
     flex: 60%;
     display: flex;
     padding-top: 10px;
 }
 
-#desafios{
-    flex: 40%;
-    display: flex;
-    height: 200px;
-    margin-top: 10px;
-}
 
 #opcoes{
-    flex: 25%;
     padding-top: 10px;
     font-family: Basketball;
     text-shadow: none;
     font-size: 20px;
+    margin-top: 60px;
+}
+
+#esquerdo #opcoes h3{
+    background-color: #fb2e01;
 }
 
 #opcoes button{
-    margin-top: 10px;
-    width: 300x;
+    margin-top: 15px;
+    width: 300px;
     height: 40px;
     background-color: #fb2e01;
     border-radius: 5px;
@@ -35,15 +27,35 @@
     font-weight: bold;
 }
 
+#opcoes button:hover{
+    filter: brightness(0.9);
+    width: 310px;
+    height: 50px;
+}
+
+#opcoes button:active{
+    
+}
+
 #retornos{
     flex: 75%;
-    background-color: black;
     color: white;
     font-family: Basketball;
     text-shadow: none;
     font-size: 20px;
-    float: right;
+}
+
+#retornoListaJogadas{
+    width: 400px;
+    background-color: black;
     height: 450px;
+    border: solid #fb2e01 ;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#direito #retornos #retornoListaJogadas h3{
+    background-color: #fb2e01;
 }
 
 #jogo #esquerdo{
@@ -70,7 +82,7 @@
     border-radius: 5px;
 }
 
-#jogo #esquerdo button{
+#jogo #menu button{
     width: 320px;
     height: 50px;
     background-color: #6fcb9f;
@@ -79,7 +91,7 @@
     font-weight: bold;
 }
 
-#jogo #esquerdo button:hover{
+#jogo #menu button:hover{
     filter: brightness(0.9);
     width: 330px;
     height: 60px;

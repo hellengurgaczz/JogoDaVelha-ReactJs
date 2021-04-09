@@ -9,6 +9,7 @@ const tabuleiro = _ => {
 
     const guardarLocalStorage = (id) => {
 
+
         if (i === 1) {
             localStorage.clear()
         }
@@ -85,6 +86,7 @@ const tabuleiro = _ => {
 
     return (
         <div id="tabuleiro">
+            
             <div id={1} onClick={e => marcar(1)}></div>
             <div id={2} onClick={e => marcar(2)}></div>
             <div id={3} onClick={e => marcar(3)}></div>

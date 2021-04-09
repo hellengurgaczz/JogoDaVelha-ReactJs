@@ -5,13 +5,13 @@
 }
 
 #jogo{
-    flex: 75%;
+    flex: 60%;
     display: flex;
     padding-top: 10px;
 }
 
 #desafios{
-    flex: 25%;
+    flex: 40%;
     display: flex;
     height: 200px;
     margin-top: 10px;
@@ -19,17 +19,31 @@
 
 #opcoes{
     flex: 25%;
-    background-color: #836FFF;
     padding-top: 10px;
+    font-family: Basketball;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+#opcoes button{
+    margin-top: 10px;
+    width: 300x;
+    height: 40px;
+    background-color: #fb2e01;
+    border-radius: 5px;
+    border: solid #fb2e01;
+    font-weight: bold;
 }
 
 #retornos{
     flex: 75%;
     background-color: black;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Basketball;
     text-shadow: none;
-    font-size: 10px;
+    font-size: 20px;
+    float: right;
+    height: 450px;
 }
 
 #jogo #esquerdo{

@@ -16,7 +16,8 @@ const retorno = _ => {
             <div>
                 {arrayKeys.map((e, i) => {
                     let objeto = JSON.parse(localStorage.getItem(e))
-                    if (i === arrayKeys.length - 1) { return <p><strong>Jogada: {objeto.jogada} | Linha: {objeto.linha} | Coluna: {objeto.coluna}</strong></p> }
+                    if (i === arrayKeys.length - 1 && _.solicitarRetorno === 1) { return <p style={{ backgroundColor: 'white', color: 'black' }}><strong>Jogada: {objeto.jogada} | Linha: {objeto.linha} | Coluna: {objeto.coluna}</strong></p> }
+                    else if (i === 0 && _.solicitarRetorno === 2)  { return <p style={{ backgroundColor: 'white', color: 'black' }}><strong>Jogada: {objeto.jogada} | Linha: {objeto.linha} | Coluna: {objeto.coluna}</strong></p> }
                     else { return <p>Jogada: {objeto.jogada} | Linha: {objeto.linha} | Coluna: {objeto.coluna}</p> }
                 })}
             </div>

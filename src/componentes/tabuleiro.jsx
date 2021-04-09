@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
 import "./tabuleiro.css"
+import RedenizarTabuleiro from './redenizarTabuleiro'
 
 var i = 1
-var array = []
+var array = Array(9).fill(0)
 
 const tabuleiro = _ => {
 
@@ -100,15 +101,9 @@ const tabuleiro = _ => {
 
     return (
         <div id="tabuleiro">
-            <div id={1} onClick={e => marcar(1)}></div>
-            <div id={2} onClick={e => marcar(2)}></div>
-            <div id={3} onClick={e => marcar(3)}></div>
-            <div id={4} onClick={e => marcar(4)}></div>
-            <div id={5} onClick={e => marcar(5)}></div>
-            <div id={6} onClick={e => marcar(6)}></div>
-            <div id={7} onClick={e => marcar(7)}></div>
-            <div id={8} onClick={e => marcar(8)}></div>
-            <div id={9} onClick={e => marcar(9)}></div>
+            {array.map((e, i) => {
+                return <div id={i + 1} onClick={e => marcar(i + 1)}></div>
+            })}
         </div>
     )
 }

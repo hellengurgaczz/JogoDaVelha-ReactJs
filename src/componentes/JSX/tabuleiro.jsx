@@ -2,17 +2,16 @@
 import React from 'react'
 import "../CSS/tabuleiro.css"
 
-
 var i = 1
 var array = Array(9).fill(0)
 
 const tabuleiro = _ => {
-
+    
     const guardarLocalStorage = (id) => {
 
-
         if (i === 1) {
-            localStorage.clear()
+
+            localStorage.clear(false)
         }
 
         let linha = null

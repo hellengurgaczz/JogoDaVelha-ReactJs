@@ -26,7 +26,7 @@ const jogo = _ => {
                     <h3>Jogador: {jogadorIcone}</h3>
                     {ganhador === 'X' || ganhador === 'O' ? <p className={'ganhador'}>O jogador {ganhador} vanceu! Parabens!</p> : null}
                     {ganhador === '#' ? <p className={'velha'}>DEU VELHA! &#129325; </p> : null}
-                    <button onClick={e => window.location.reload()}>REINICIAR JOGO</button>
+                    <button onClick={e => _.mudarTela(false)}>REINICIAR JOGO</button>
                 </div>
                 <div id="opcoes">
                     <h3>Lista de Jogadas:</h3>
